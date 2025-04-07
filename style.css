@@ -1,0 +1,29 @@
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    color: green;
+}
+
+.oferta {
+    color: red;
+    font-weight: bold;
+}
+
+.oferta:hover {
+    font-size: 30px;
+    /*el estado hover hace que el tamño de las letras cambien*/
+}
+
+article {
+    background-color: yellow;
+    padding: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    article {
+        background-color: green;
+        padding: 30px;
+    }
+}
