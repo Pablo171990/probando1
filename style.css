@@ -21,7 +21,36 @@ article {
     padding: 10px;
 }
 
+/*aca abajo empieza media query*/
+@media screen and (min-width: 900px)
+/*esto es para que si la pantalla es de menos 900px(telefono) entonces el art se vera en amarillo*/
+    {
+    article {
+        background-color: green;
+        padding: 30px;
+    }
+}
+
+/*section {
+    display: flex;
+    /*para que las filas se agrupen en horizontal*/
+/*se elimina este fles para poder probar la grilla*/
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* una sola columna por defecto */
+    gap: 20px;
+    /* espacio entre las cajas */
+}
+
+/* Grilla responsiva: si la pantalla es ancha, usar 2 columnas */
 @media screen and (min-width: 900px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
     article {
         background-color: green;
         padding: 30px;
